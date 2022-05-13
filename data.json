@@ -1,0 +1,14 @@
+{
+	"personen":[
+		{
+			"_id": {
+				"$oid": "5968dd23fc13ae04d9000001"
+			},
+			"fullName":{
+				"firstName": "Michael",
+				"lastName": "van der Putten"
+			},
+			"birthDate": "22 april 1978"
+		}
+	]
+}

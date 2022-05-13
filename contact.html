@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+		<title>Demo Project</title>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo.gif" id="logo"/>
+			<h1><a href="index.html">Demo Project</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ajax-request.html">AJAX Request</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="container">
+			<main>
+				<h2>Contact</h2>
+				<form id="frmContact" name="frmContact" action="contact.html">
+					<div>
+						<label for="senderName">Name:</label>
+						<input id="senderName" name="senderName" type="text" data-rule="required|name|length-2-30" />
+					</div>
+					<div class="formSeparator">
+						<label for="senderEmail">Email:</label>
+						<input id="senderEmail" name="senderEmail" type="text" data-rule="required" />
+					</div>
+					<div class="formSeparator">
+						<label for="msgSubject">Subject:</label>
+						<input id="msgSubject" name="msgSubject" type="text" data-rule="required|name|length-2-20" />
+					</div>
+					<div class="formSeparator">
+						<label for="msgText">Message:</label>
+						<input id="msgText" name="msgText" type="text" data-rule="required"/>
+					</div>
+					<div>
+						<button id="sendData" type="submit">Send</button>
+					</div>
+				</form>
+			</main>
+			<aside>
+				<section>
+          <h4>News</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+				<section>
+          <h4>News</h4>
+          <a href="">Link 1</a>
+          <a href="">Link 2</a>
+          <a href="">Link 3</a>
+          <a href="">Link 4</a>
+				</section>
+			</aside>
+		</div>
+		<footer>
+			<hr />
+			Copyright &copy; 2022. All rights reserved
+		</footer>
+		<script src="scripts/chkcontactform.js"></script>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#logo {
+	float: left;
+	width: 150px;
+	height: 100px;
+}
+a {
+	text-decoration: none;
+}
+header {
+	background-color: #000;
+}
+header h1 {
+	margin: 0;
+	padding: 11px 10px;
+  color: red;
+}
+header h1 a {
+	color: red;
+}
+nav {
+	text-align: left;
+	background-color: lightgray;
+	border-bottom: 1px solid gray;
+}
+nav li, nav a {
+	display: inline-block;
+}
+nav a {
+	padding: 10px 15px;
+	color: black;
+}
+nav a:hover {
+	background-color: lightgreen;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+/* start flex-box code */
+#container {
+	display: flex;
+	flex-wrap: wrap;
+}
+main {
+	flex: 70%;
+	padding: 20px;
+	border-right: 1px solid #eeeeee;
+}
+aside {
+	flex: 30%;
+	padding: 20px;
+}
+/* End flex-box code */
+/* Start form-style code */
+label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+button {
+	margin-left: 155px;
+	margin-top: 10px;
+}
+.formSeparator {
+  margin-top: 10px;
+}
+/* End form-style code */
+aside section a {
+  display: block;
+  padding: 6px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.blockIt {
+  background-color: lightyellow;
+  display: inline-block;
+}
+.liGreen {
+  background-color: lightgreen;
+}
+.newsImage {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer {
+	clear: both;
+	text-align: center;
+	font-size: .8em;
+	padding-top: 50px;
+}
+#container, footer {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+/* Start media query code */
+@media all and (max-width: 700px) {
+	.newsImage {
+		display: none;
+	}
+	.newsText {
+		font-size: .8em;
+	}
+}
+/* End media query code */
